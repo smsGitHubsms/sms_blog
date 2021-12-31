@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form  method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+
+    {{ form.as_p }}
+
+  <h4>Are you sure,you wish to add this blog ??</h4>
+  <input type="submit" >
+
+</form>
+</body>
+</html>
